@@ -3,7 +3,7 @@
 package rds
 
 import (
-	"github.com/aws/aws-sdk-go/private/waiter"
+	"github.com/somathor/aws-sdk-go/private/waiter"
 )
 
 func (c *RDS) WaitUntilDBInstanceAvailable(input *DescribeDBInstancesInput) error {

@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/credentials"
-	"github.com/aws/aws-sdk-go/aws/request"
+	"github.com/somathor/aws-sdk-go/aws"
+	"github.com/somathor/aws-sdk-go/aws/credentials"
+	"github.com/somathor/aws-sdk-go/aws/request"
 )
 
 var (
@@ -105,7 +105,7 @@ func (v2 *signer) Sign() error {
 	}
 
 	// Set new query parameters
-	v2.Query.Set("AWSAccessKeyId", credValue.AccessKeyID)
+	v2.Query.Set("AccessKeyId", credValue.AccessKeyID)
 	v2.Query.Set("SignatureVersion", signatureVersion)
 	v2.Query.Set("SignatureMethod", signatureMethod)
 	v2.Query.Set("Timestamp", v2.Time.UTC().Format(timeFormat))
@@ -119,6 +119,7 @@ func (v2 *signer) Sign() error {
 	method := v2.Request.Method
 	host := v2.Request.URL.Host
 	path := v2.Request.URL.Path
+	fmt.Println(path)
 	if path == "" {
 		path = "/"
 	}

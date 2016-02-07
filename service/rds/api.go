@@ -6,10 +6,10 @@ package rds
 import (
 	"time"
 
-	"github.com/aws/aws-sdk-go/aws/awsutil"
-	"github.com/aws/aws-sdk-go/aws/request"
-	"github.com/aws/aws-sdk-go/private/protocol"
-	"github.com/aws/aws-sdk-go/private/protocol/query"
+	"github.com/somathor/aws-sdk-go/aws/awsutil"
+	"github.com/somathor/aws-sdk-go/aws/request"
+	"github.com/somathor/aws-sdk-go/private/protocol"
+	"github.com/somathor/aws-sdk-go/private/protocol/query"
 )
 
 const opAddSourceIdentifierToSubscription = "AddSourceIdentifierToSubscription"

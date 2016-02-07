@@ -3,12 +3,12 @@
 package s3
 
 import (
-	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/client"
-	"github.com/aws/aws-sdk-go/aws/client/metadata"
-	"github.com/aws/aws-sdk-go/aws/request"
-	"github.com/aws/aws-sdk-go/private/protocol/restxml"
-	"github.com/aws/aws-sdk-go/private/signer/v4"
+	"github.com/somathor/aws-sdk-go/aws"
+	"github.com/somathor/aws-sdk-go/aws/client"
+	"github.com/somathor/aws-sdk-go/aws/client/metadata"
+	"github.com/somathor/aws-sdk-go/aws/request"
+	"github.com/somathor/aws-sdk-go/private/protocol/restxml"
+	"github.com/somathor/aws-sdk-go/private/signer/v4"
 )
 
 // S3 is a client for Amazon S3.

@@ -8,8 +8,8 @@ import (
 
 func TestEnvProviderRetrieve(t *testing.T) {
 	os.Clearenv()
-	os.Setenv("AWS_ACCESS_KEY_ID", "access")
-	os.Setenv("AWS_SECRET_ACCESS_KEY", "secret")
+	os.Setenv("NIFTY_ACCESS_KEY_ID", "access")
+	os.Setenv("NIFTY_SECRET_ACCESS_KEY", "secret")
 	os.Setenv("AWS_SESSION_TOKEN", "token")
 
 	e := EnvProvider{}
@@ -23,8 +23,8 @@ func TestEnvProviderRetrieve(t *testing.T) {
 
 func TestEnvProviderIsExpired(t *testing.T) {
 	os.Clearenv()
-	os.Setenv("AWS_ACCESS_KEY_ID", "access")
-	os.Setenv("AWS_SECRET_ACCESS_KEY", "secret")
+	os.Setenv("NIFTY_ACCESS_KEY_ID", "access")
+	os.Setenv("NIFTY_SECRET_ACCESS_KEY", "secret")
 	os.Setenv("AWS_SESSION_TOKEN", "token")
 
 	e := EnvProvider{}
@@ -39,7 +39,7 @@ func TestEnvProviderIsExpired(t *testing.T) {
 
 func TestEnvProviderNoAccessKeyID(t *testing.T) {
 	os.Clearenv()
-	os.Setenv("AWS_SECRET_ACCESS_KEY", "secret")
+	os.Setenv("NIFTY_SECRET_ACCESS_KEY", "secret")
 
 	e := EnvProvider{}
 	creds, err := e.Retrieve()
@@ -48,7 +48,7 @@ func TestEnvProviderNoAccessKeyID(t *testing.T) {
 
 func TestEnvProviderNoSecretAccessKey(t *testing.T) {
 	os.Clearenv()
-	os.Setenv("AWS_ACCESS_KEY_ID", "access")
+	os.Setenv("NIFTY_ACCESS_KEY_ID", "access")
 
 	e := EnvProvider{}
 	creds, err := e.Retrieve()

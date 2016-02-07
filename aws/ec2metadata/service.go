@@ -7,11 +7,11 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/awserr"
-	"github.com/aws/aws-sdk-go/aws/client"
-	"github.com/aws/aws-sdk-go/aws/client/metadata"
-	"github.com/aws/aws-sdk-go/aws/request"
+	"github.com/somathor/aws-sdk-go/aws"
+	"github.com/somathor/aws-sdk-go/aws/awserr"
+	"github.com/somathor/aws-sdk-go/aws/client"
+	"github.com/somathor/aws-sdk-go/aws/client/metadata"
+	"github.com/somathor/aws-sdk-go/aws/request"
 )
 
 // ServiceName is the name of the service.

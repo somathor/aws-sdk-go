@@ -3,12 +3,12 @@
 package opsworks
 
 import (
-	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/client"
-	"github.com/aws/aws-sdk-go/aws/client/metadata"
-	"github.com/aws/aws-sdk-go/aws/request"
-	"github.com/aws/aws-sdk-go/private/protocol/jsonrpc"
-	"github.com/aws/aws-sdk-go/private/signer/v4"
+	"github.com/somathor/aws-sdk-go/aws"
+	"github.com/somathor/aws-sdk-go/aws/client"
+	"github.com/somathor/aws-sdk-go/aws/client/metadata"
+	"github.com/somathor/aws-sdk-go/aws/request"
+	"github.com/somathor/aws-sdk-go/private/protocol/jsonrpc"
+	"github.com/somathor/aws-sdk-go/private/signer/v4"
 )
 
 // Welcome to the AWS OpsWorks API Reference. This guide provides descriptions,

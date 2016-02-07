@@ -4,10 +4,10 @@
 package opsworks
 
 import (
-	"github.com/aws/aws-sdk-go/aws/awsutil"
-	"github.com/aws/aws-sdk-go/aws/request"
-	"github.com/aws/aws-sdk-go/private/protocol"
-	"github.com/aws/aws-sdk-go/private/protocol/jsonrpc"
+	"github.com/somathor/aws-sdk-go/aws/awsutil"
+	"github.com/somathor/aws-sdk-go/aws/request"
+	"github.com/somathor/aws-sdk-go/private/protocol"
+	"github.com/somathor/aws-sdk-go/private/protocol/jsonrpc"
 )
 
 const opAssignInstance = "AssignInstance"

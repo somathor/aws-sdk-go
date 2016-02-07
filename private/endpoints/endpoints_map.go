@@ -15,90 +15,23 @@ type endpointEntry struct {
 var endpointsMap = endpointStruct{
 	Version: 2,
 	Endpoints: map[string]endpointEntry{
-		"*/*": {
-			Endpoint: "{service}.{region}.amazonaws.com",
+		"*/ec2": {
+			Endpoint: "{region}.cp.cloud.nifty.com/api",
 		},
-		"*/cloudfront": {
-			Endpoint:      "cloudfront.amazonaws.com",
-			SigningRegion: "us-east-1",
+		"east-1/s3": {
+			Endpoint: "ncss.nifty.com",
 		},
-		"*/cloudsearchdomain": {
-			Endpoint:      "",
-			SigningRegion: "us-east-1",
+		"west-1/s3": {
+			Endpoint: "west-1-ncss.nifty.com",
 		},
-		"*/data.iot": {
-			Endpoint:      "",
-			SigningRegion: "us-east-1",
+		"*/rdb": {
+			Endpoint: "rdb.jp-{region}.api.cloud.nifty.com",
 		},
-		"*/ec2metadata": {
-			Endpoint:      "http://169.254.169.254/latest",
-			SigningRegion: "us-east-1",
+		"*/dns": {
+			Endpoint: "dns.api.cloud.nifty.com",
 		},
-		"*/iam": {
-			Endpoint:      "iam.amazonaws.com",
-			SigningRegion: "us-east-1",
-		},
-		"*/importexport": {
-			Endpoint:      "importexport.amazonaws.com",
-			SigningRegion: "us-east-1",
-		},
-		"*/route53": {
-			Endpoint:      "route53.amazonaws.com",
-			SigningRegion: "us-east-1",
-		},
-		"*/sts": {
-			Endpoint:      "sts.amazonaws.com",
-			SigningRegion: "us-east-1",
-		},
-		"*/waf": {
-			Endpoint:      "waf.amazonaws.com",
-			SigningRegion: "us-east-1",
-		},
-		"ap-northeast-1/s3": {
-			Endpoint: "s3-{region}.amazonaws.com",
-		},
-		"ap-northeast-2/s3": {
-			Endpoint: "s3-{region}.amazonaws.com",
-		},
-		"ap-southeast-1/s3": {
-			Endpoint: "s3-{region}.amazonaws.com",
-		},
-		"ap-southeast-2/s3": {
-			Endpoint: "s3-{region}.amazonaws.com",
-		},
-		"cn-north-1/*": {
-			Endpoint: "{service}.{region}.amazonaws.com.cn",
-		},
-		"eu-central-1/s3": {
-			Endpoint: "{service}.{region}.amazonaws.com",
-		},
-		"eu-west-1/s3": {
-			Endpoint: "s3-{region}.amazonaws.com",
-		},
-		"sa-east-1/s3": {
-			Endpoint: "s3-{region}.amazonaws.com",
-		},
-		"us-east-1/s3": {
-			Endpoint: "s3.amazonaws.com",
-		},
-		"us-east-1/sdb": {
-			Endpoint:      "sdb.amazonaws.com",
-			SigningRegion: "us-east-1",
-		},
-		"us-gov-west-1/iam": {
-			Endpoint: "iam.us-gov.amazonaws.com",
-		},
-		"us-gov-west-1/s3": {
-			Endpoint: "s3-{region}.amazonaws.com",
-		},
-		"us-gov-west-1/sts": {
-			Endpoint: "sts.us-gov-west-1.amazonaws.com",
-		},
-		"us-west-1/s3": {
-			Endpoint: "s3-{region}.amazonaws.com",
-		},
-		"us-west-2/s3": {
-			Endpoint: "s3-{region}.amazonaws.com",
+		"*/ess": {
+			Endpoint: "ess.api.cloud.nifty.com",
 		},
 	},
 }

@@ -1,23 +1,23 @@
 # AWS SDK for Go
 
 [![API Reference](http://img.shields.io/badge/api-reference-blue.svg)](http://docs.aws.amazon.com/sdk-for-go/api)
-[![Join the chat at https://gitter.im/aws/aws-sdk-go](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/aws/aws-sdk-go?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Build Status](https://img.shields.io/travis/aws/aws-sdk-go.svg)](https://travis-ci.org/aws/aws-sdk-go)
-[![Apache V2 License](http://img.shields.io/badge/license-Apache%20V2-blue.svg)](https://github.com/aws/aws-sdk-go/blob/master/LICENSE.txt)
+[![Join the chat at https://gitter.im/somathor/aws-sdk-go](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/somathor/aws-sdk-go?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://img.shields.io/travis/somathor/aws-sdk-go.svg)](https://travis-ci.org/somathor/aws-sdk-go)
+[![Apache V2 License](http://img.shields.io/badge/license-Apache%20V2-blue.svg)](https://github.com/somathor/aws-sdk-go/blob/master/LICENSE.txt)
 
 aws-sdk-go is the official AWS SDK for the Go programming language.
 
-Checkout our [release notes](https://github.com/aws/aws-sdk-go/releases) for information about the latest bug fixes, updates, and features added to the SDK.
+Checkout our [release notes](https://github.com/somathor/aws-sdk-go/releases) for information about the latest bug fixes, updates, and features added to the SDK.
 
 ## Installing
 
 If you are using Go 1.5 with the `GO15VENDOREXPERIMENT=1` vendoring flag you can use the following to get the SDK as the SDK's runtime dependencies are vendored in the `vendor` folder.
 
-    $ go get -u github.com/aws/aws-sdk-go
+    $ go get -u github.com/somathor/aws-sdk-go
 
 Otherwise you'll need to tell Go to get the SDK and all of its dependencies.
 
-    $ go get -u github.com/aws/aws-sdk-go/...
+    $ go get -u github.com/somathor/aws-sdk-go/...
 
 ## Configuring Credentials
 
@@ -37,8 +37,8 @@ You can learn more about the credentials file from this
 Alternatively, you can set the following environment variables:
 
 ```
-AWS_ACCESS_KEY_ID=AKID1234567890
-AWS_SECRET_ACCESS_KEY=MY-SECRET-KEY
+NIFTY_ACCESS_KEY_ID=AKID1234567890
+NIFTY_SECRET_ACCESS_KEY=MY-SECRET-KEY
 ```
 
 ### AWS CLI config file (`~/aws/config`)
@@ -58,9 +58,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/aws/session"
-	"github.com/aws/aws-sdk-go/service/ec2"
+	"github.com/somathor/aws-sdk-go/aws"
+	"github.com/somathor/aws-sdk-go/aws/session"
+	"github.com/somathor/aws-sdk-go/service/ec2"
 )
 
 func main() {
